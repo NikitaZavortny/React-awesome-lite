@@ -2,8 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 import HomePage from './components/HomePage.jsx';
-import RegForm from './components/RegForm.jsx';
-import LoginForm from './components/LoginForm.jsx';
 
 function App() {
   return (
@@ -17,8 +15,6 @@ function App() {
       <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={< HomePage />} />
-          <Route path="/registration" element={<RegForm />} />
-          <Route path="/login" element={<LoginForm />} />
         </Routes>
       </BrowserRouter>
 
